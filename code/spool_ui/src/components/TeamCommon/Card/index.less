@@ -1,0 +1,530 @@
+@import '~antd/lib/style/themes/default.less';
+
+.home_background {
+  background-color: #fff;
+  padding: 24px 32px;
+  overflow: hidden;
+}
+
+.detail_number {
+  text-align: center;
+  padding: 3px 8px; 
+  background:#40dcff;
+  color:#fff;
+  border-radius: 6px;
+}
+
+.display_flex {
+  display: flex;
+}
+
+.line_h32 {
+  line-height: 32px;
+}
+
+.pw_center {
+  vertical-align: middle;
+}
+
+.w200 {
+  width: 200px;
+}
+.fs12 {
+  font-size: 12px;
+}
+.float_r {
+  float: right;
+}
+.mr8 {
+  margin-right: 8px;
+}
+.mr16 {
+  margin-right: 16px;
+}
+.mt8 {
+  margin-top: 8px;
+}
+.mt16 {
+  margin-top: 16px;
+}
+.mt24 {
+  margin-top: 24px;
+}
+.ml32 {
+  margin-left: 32px;
+}
+.mb0 {
+  margin-bottom: 0px;
+}
+.m0_8 {
+  margin: 0px 8px;
+}
+.m16_0 {
+  margin: 16px 0px;
+}
+/*card列表*/
+.standardList {
+  :global {
+    .ant-card-head {
+      border-bottom: none;
+    }
+    .ant-card-head-title {
+      padding: 24px 0;
+      line-height: 32px;
+    }
+    .ant-card-extra {
+      padding: 24px 0;
+    }
+    .ant-list-pagination {
+      margin-top: 24px;
+      text-align: right;
+    }
+    .ant-avatar-lg {
+      width: 48px;
+      height: 48px;
+      line-height: 48px;
+    }
+  }
+  .headerInfo {
+    position: relative;
+    text-align: center;
+    & > span {
+      display: inline-block;
+      margin-bottom: 4px;
+      color: @text-color-secondary;
+      font-size: @font-size-base;
+      line-height: 22px;
+    }
+    & > p {
+      margin: 0;
+      color: @heading-color;
+      font-size: 24px;
+      line-height: 32px;
+    }
+    & > em {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 1px;
+      height: 56px;
+      background-color: @border-color-split;
+    }
+  }
+ 
+  .extraContentSearch {
+    width: 272px;
+    margin-left: 16px;
+  }
+}
+.listContent {
+  font-size: 0;
+  .listContentItem {
+    display: inline-block;
+    margin-left: 40px;
+    color: @text-color-secondary;
+    font-size: @font-size-base;
+    vertical-align: middle;
+    > span {
+      line-height: 20px;
+      padding-left: 8px;
+    }
+    > p {
+      margin-top: 4px;
+      margin-bottom: 0;
+      line-height: 22px;
+    }
+  }
+}
+@media screen and (max-width: @screen-xs) {
+  .standardList {
+    :global {
+      .ant-list-item-content {
+        display: block;
+        flex: none;
+        width: 100%;
+      }
+      .ant-list-item-action {
+        margin-left: 0;
+      }
+    }
+    .listContent {
+      margin-left: 0;
+      & > div {
+        margin-left: 0;
+      }
+    }
+    .listCard {
+      :global {
+        .ant-card-head-title {
+          overflow: visible;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-sm) {
+  .standardList {
+    .extraContentSearch {
+      width: 100%;
+      margin-left: 0;
+    }
+    .headerInfo {
+      margin-bottom: 16px;
+      & > em {
+        display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-md) {
+  .standardList {
+    .listContent {
+      & > div {
+        display: block;
+      }
+      & > div:last-child {
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+  .listCard {
+    :global {
+      .ant-radio-group {
+        display: block;
+        margin-bottom: 8px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-lg) and (min-width: @screen-md) {
+  .standardList {
+    .listContent {
+      & > div {
+        display: block;
+      }
+      & > div:last-child {
+        top: 0;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: @screen-xl) {
+  .standardList {
+    .listContent {
+      & > div {
+        margin-left: 24px;
+      }
+      & > div:last-child {
+        top: 0;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .standardList {
+    .listContent {
+      text-align: right;
+      & > div:last-child {
+        top: 0;
+      }
+    }
+  }
+}
+
+.standardListForm {
+  :global {
+    .ant-form-item {
+      margin-bottom: 12px;
+      &:last-child {
+        margin-bottom: 32px;
+        padding-top: 4px;
+      }
+    }
+  }
+}
+
+.formResult {
+  width: 100%;
+  [class^='title'] {
+    margin-bottom: 8px;
+  }
+}
+.usertag1{
+  display: inline-block;
+  padding:2px 4px;
+  background:#f9f7ff;
+  height:24px;
+  margin-right: 10px;
+  position: relative;
+
+}
+.usertag1:before{
+content:"";
+position: absolute;
+width:3px;
+top:0;
+left:0;
+bottom:0;
+background:#ff1919;
+}
+.usertag2{
+  display: inline-block;
+  padding:2px 4px;
+  background:#f9f7ff;
+  height:24px;
+  margin-right: 10px;
+  position: relative;
+
+}
+.usertag2:before{
+content:"";
+position: absolute;
+width:3px;
+top:0;
+left:0;
+bottom:0;
+background:#40dcff;
+}
+.usertag3{
+  display: inline-block;
+  padding:2px 4px;
+  background:#f9f7ff;
+  height:24px;
+  margin-right: 10px;
+  position: relative;
+
+}
+.usertag3:before{
+content:"";
+position: absolute;
+width:3px;
+top:0;
+left:0;
+bottom:0;
+background:#6dff5e;
+}
+.usertag4{
+  display: inline-block;
+  padding:2px 4px;
+  background:#f9f7ff;
+  height:24px;
+  margin-right: 10px;
+  position: relative;
+
+}
+.usertag4:before{
+content:"";
+position: absolute;
+width:3px;
+top:0;
+left:0;
+bottom:0;
+background:#ff9023;
+}
+.usertag5{
+  display: inline-block;
+  padding:2px 4px;
+  background:#f9f7ff;
+  height:24px;
+  margin-right: 10px;
+  position: relative;
+
+}
+.usertag5:before{
+content:"";
+position: absolute;
+width:3px;
+top:0;
+left:0;
+bottom:0;
+background:#a657ff;
+}
+.usertag6{
+  display: inline-block;
+  padding:2px 4px;
+  background:#f9f7ff;
+  height:24px;
+  margin-right: 10px;
+  position: relative;
+
+}
+.usertag6:before{
+content:"";
+position: absolute;
+width:3px;
+top:0;
+left:0;
+bottom:0;
+background:#3d6bff;
+}
+.usertag7{
+  display: inline-block;
+  padding:2px 4px;
+  background:#f9f7ff;
+  height:24px;
+  margin-right: 10px;
+  position: relative;
+
+}
+.usertag7:before{
+content:"";
+position: absolute;
+width:3px;
+top:0;
+left:0;
+bottom:0;
+background:#ffe56c;
+}
+.usertag8{
+  display: inline-block;
+  padding:2px 4px;
+  background:#f9f7ff;
+  height:24px;
+  margin-right: 10px;
+  position: relative;
+
+}
+.usertag8:before{
+content:"";
+position: absolute;
+width:3px;
+top:0;
+left:0;
+bottom:0;
+background:#bf44ff;
+}
+:global {
+  .ant-list-item-meta{
+    display: flex;
+    flex: 1 1;
+    align-items: flex-start;
+    font-size: 0;
+  }
+  .ant-card-body{
+    padding:0 !important
+  }
+}
+.listdetail{
+  background: #fcfcfc;
+  min-height:200px;
+  display: none;
+}
+.baseinfo span:first-child{
+  margin-right:10px;
+  color:#aeaeae
+}
+.titleinfo{
+  font-size:12px;
+  color:#aeaeae;
+}
+.navbg ul{
+  padding:0
+}
+.navbg ul li{
+  height:48px;
+  background:#fcfcfc;
+  margin-bottom:5px;
+  padding-left:10px;
+  width:100%;
+  line-height:48px;
+
+}
+.navbg ul li span{
+ color:#aeaeae;
+ margin-left:5px;
+}
+.rolesinfo{
+  position: absolute;
+  z-index: 99;
+  background: #fff;
+  width: 100%;
+  box-shadow: 1px 2px 3px #f1efef;
+  padding-bottom: 10px;
+}
+.roledetail b{
+  font-weight: normal
+}
+.roledetail{
+  border-top:2px solid #3d6bff
+}
+.roledetail span{
+  color:#aeaeae;
+}
+.roleopt{
+  background:#fcfcfc;
+  min-height: 300px;
+  margin-top:50px;
+}
+.roleopt h3{
+  font-size:14px;
+  padding-left:10px;
+}
+.roleopt ul{
+  padding-left:10px;
+  clear: both;
+  min-height: 40px;
+}
+.roleopt ul li{
+  float:left;
+  margin-right:20px;
+}
+.more{
+  color:#3d6bff;
+  margin-left:30px;
+}
+.navbg ul li.selected{
+  background:#3d6bff;
+  color:#ffffff;
+
+}
+.editbtn{
+  position: absolute;
+  right:30px;
+  top:20px;
+}
+.arrordown{
+  background: #3d6bff;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: block;
+  color: #ffffff;
+  line-height: 15px;
+  transform: rotate(-90deg);
+}
+.arrordown:hover{
+  color: #87f1d0;
+}
+.listdetail *{
+  font-size: 12px;
+}
+.num{
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  color: #ffffff;
+  line-height: 16px;
+  background: #5176e4;
+  text-align: center;
+  margin-right: 4px;
+}
+.project{
+  width:90%;
+  height:24px;
+  white-space: nowrap;
+  word-break: break-all;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 10px
+}
+.listContent{
+  font-size:12px;
+}

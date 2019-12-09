@@ -1,0 +1,44 @@
+.listtitle > span {
+  display: inline-block;
+  background: #e1eaff;
+  height: 38px;
+  line-height: 38px;
+}
+
+.listtitle > :first-child {
+  padding-left: 16px;
+}
+
+.listContent {
+  display: inline-flex;
+  width: 100%;
+  word-break: break-all;
+  border: 1px solid #e8e8e8;
+  margin-bottom: 8px;
+  > span {
+    background: #ffffff;
+    padding: 16px 0px;
+  }
+}
+
+.listContent > :first-child {
+  padding-left: 16px;
+}
+
+.rowStyle {
+  :global {
+    .read_true {
+      background-color: #b9c8f5;
+    }
+    .read_false {
+      background-color: #f5f6fa;
+    }
+  }
+}
+
+.alarm_content {
+  span {
+    white-space: nowrap;
+    margin-right: 8px;
+  }
+}

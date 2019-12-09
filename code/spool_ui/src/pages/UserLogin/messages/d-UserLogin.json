@@ -1,0 +1,42 @@
+{
+  "login1": {
+    "id": "app.login.userName",
+    "defaultMessage": "User Name",
+    "zhCN": "用户名"
+  },
+  "login2": {
+    "id": "app.login.password",
+    "defaultMessage": "Password",
+    "zhCN": "密码"
+  },
+  "login3": {
+    "id": "app.login.login",
+    "defaultMessage": "Sign in",
+    "zhCN": "登录"
+  },
+  "login4": {
+    "id": "PWD_REQUIRED",
+    "defaultMessage": "This field is required.",
+    "zhCN": "密码不能为空"
+  },
+  "login5": {
+    "id": "validation.password.required",
+    "defaultMessage": "Please enter one password",
+    "zhCN": "请输入密码!"
+  },
+  "login6": {
+    "id": "validation.userName.required",
+    "defaultMessage": "Please enter one user name",
+    "zhCN": "请输入用户名"
+  },
+  "login7": {
+    "id": "app.login.forgot-password",
+    "defaultMessage": "忘记密码",
+    "zhCN": "忘记密码"
+  },
+  "login8": {
+    "id": "app.login.remember-me",
+    "defaultMessage": "自动登录",
+    "zhCN": "自动登录"
+  }
+}

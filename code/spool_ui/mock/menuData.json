@@ -1,0 +1,10 @@
+[
+  {
+    "menuId": 1,
+    "parentId": 0,
+    "name": "Menu1",
+    "icon": "home",
+    "path": "/menu1",
+    "il8n": "menu.menu1"
+  }
+]

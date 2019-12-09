@@ -1,0 +1,312 @@
+@import '~antd/lib/style/themes/default.less';
+
+@nav-header-height: @layout-header-height;
+
+// 新版菜单
+.menuIcon {
+  position: relative;
+  height: @nav-header-height;
+  line-height: @nav-header-height;
+  background:#ffffff;
+  text-align: center;
+  cursor: pointer;
+  i {
+    font-size: 18px;
+    color: #333333;
+  }
+}
+
+// 产品与服务按钮
+.productService {
+  position: absolute;
+  top: 64px;
+  background: #eeeff3;
+  transition: all .3s cubic-bezier(0,0,.2,1);
+  text-align: center;
+  button {
+    background: #25468d;
+    color: #eeeff3;
+    border: none;
+    margin: 16px;
+    &:hover, &:focus, &:active {
+      background: #25468d !important;
+      color: #eeeff3 !important;
+      border: none;
+    }
+  }
+}
+
+// 当前模块
+.currentModel {
+  text-align: center;
+  white-space: nowrap;
+  :first-child {
+    color: #9b9ea0;
+    margin-right: 16px;
+  }
+  :last-child {
+    color: #111;
+  }
+}
+
+.logo {
+  position: relative;
+  height: @nav-header-height;
+  padding-left: (@menu-collapsed-width - 32px) / 2;
+  overflow: hidden;
+  line-height: @nav-header-height;
+  background: #002140;
+  transition: all 0.3s;
+  img {
+    display: inline-block;
+    height: 32px;
+    vertical-align: middle;
+  }
+  h1 {
+    display: inline-block;
+    margin: 0 0 0 12px;
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: Avenir, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    vertical-align: middle;
+  }
+}
+.sider {
+  position: relative;
+  z-index: 10;
+  min-height: 100vh;
+  box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
+  &.fixSiderBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05);
+    :global {
+      .ant-menu-root {
+        height: ~'calc(100vh - @{nav-header-height})';
+        overflow-y: auto;
+      }
+      .ant-menu-inline {
+        border-right: 0;
+        .ant-menu-item,
+        .ant-menu-submenu-title {
+          width: 100%;
+        }
+      }
+    }
+  }
+  &.light {
+    background-color: #eeeff3;
+    box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05);
+    .logo {
+      background: #eeeff3;
+      box-shadow: 1px 1px 0 0 @border-color-split;
+      h1 {
+        color: @primary-color;
+      }
+    }
+    :global(.ant-menu-light) {
+      border-right-color: transparent;
+    }
+  }
+}
+
+.icon {
+  width: 14px;
+  vertical-align: baseline;
+}
+
+:global {
+  .top-nav-menu li.ant-menu-item {
+    height: @nav-header-height;
+    line-height: @nav-header-height;
+  }
+  .drawer .drawer-content {
+    background: #001529;
+  }
+  .ant-menu-inline-collapsed {
+    & > .ant-menu-item .sider-menu-item-img + span,
+    &
+      > .ant-menu-item-group
+      > .ant-menu-item-group-list
+      > .ant-menu-item
+      .sider-menu-item-img
+      + span,
+    & > .ant-menu-submenu > .ant-menu-submenu-title .sider-menu-item-img + span {
+      display: inline-block;
+      max-width: 0;
+      opacity: 0;
+    }
+  }
+  .ant-menu-item .sider-menu-item-img + span,
+  .ant-menu-submenu-title .sider-menu-item-img + span {
+    opacity: 1;
+    transition: opacity 0.3s @ease-in-out, width 0.3s @ease-in-out;
+  }
+  .ant-drawer-left {
+    .ant-drawer-body {
+      padding: 0;
+    }
+  }
+}
+
+/**sidebar***/
+.sidebar_productList {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 40px 30px 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  overflow: hidden;
+  column-count: 3; // 设置显示2列
+  column-gap: 30px; //设置或检索对象的列与列之间的间隙为2px
+  column-width: 180px;
+}
+.sidebarwarp {
+  width: 860px;
+  position: absolute;
+  height: calc(100vh - 64px);
+  top: @nav-header-height;
+  background: #e4e5e9;
+  overflow: auto;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+.menuBarClose {
+  position: absolute;
+  right: 23px;
+  top: 22px;
+}
+
+/*小盒子内容区的样式，display:inline-block：实现 效果*/
+.pic {
+  padding: 1em;
+  margin: 0 0 1.3em;
+  -webkit-column-break-inside: avoid;
+  page-break-inside: avoid;
+  break-inside: avoid;
+}
+.sidebar-product-category-group-item h5 {
+  position: relative;
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #111;
+}
+.sidebar-product-category-group-item h5::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 80%;
+  background: #d1d2d6;
+  top: 38px;
+}
+.sidebar-product-category-group-item h5::after {
+  content: '';
+  position: absolute;
+  width: 40%;
+  height: 3px;
+  top: 38px;
+  background: #25468d;
+  left: 0;
+}
+.sidebar-product-category-group-item ul {
+  padding: 0;
+  margin: 0;
+}
+.sidebar-product-category-group-item ul li {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+.sidebar-product-category-group-item ul li a {
+  display: block;
+  padding: 0 10px;
+  height: 30px;
+  line-height: 30px;
+  font-size: 12px;
+  text-decoration: none;
+  color: #555;
+  overflow-y: auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  &:hover {
+    color: #1890ff;
+  }
+}
+.fastnav {
+  position: absolute;
+  width: 106px;
+  height: 600px;
+  right: 5px;
+  top: 62px;
+}
+.fastnav ul {
+  margin: 0;
+  padding: 0 0 0 10px;
+  li {
+    height: 36px;
+    line-height: 36px;
+    cursor: pointer;
+    &:hover {
+      color: #1890ff;
+    }
+  }
+}
+.fastnav h1 {
+  font-size: 12px;
+  color: #a1a1a1;
+}
+.fastnav ul::before {
+  content: '';
+  position: absolute;
+  top: 29px;
+  bottom: -14px;
+  width: 1px;
+  background: #d1d2d6;
+  left: 1px;
+}
+.selectnav {
+  color: #ffffff;
+  padding: 0px 4px;
+  border-radius: 2px;
+  background: #ff5907;
+  position: absolute;
+  font-size: 12px;
+  right: 50px;
+  float: left;
+  top: 7px;
+  height: 18px;
+  line-height: 18px;
+}
+.sidebarwarp h2 {
+  color: #25468d;
+  padding-left: 20px;
+  font-size: 12px;
+  margin-top: 22px;
+  margin-left: 23px;
+}
+.sidebarwarp h2::before {
+  content: '';
+  position: absolute;
+  left: 30px;
+  width: 2px;
+  height: 12px;
+  background: #25468d;
+  top: 26px;
+}
+.fastnav .selected::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 36px;
+  background: #25468d;
+}

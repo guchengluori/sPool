@@ -1,0 +1,143 @@
+@import '~antd/lib/style/themes/default.less';
+@prefix-cls: ~'@{ant-prefix}';
+
+.dashbox{
+  background:#ffffff;
+  height:100px;
+}
+.dashbox h1{
+  font-size:12px;
+  font-weight: bold;
+  padding: 15px 0 0 15px;
+}
+.total li{
+  float: left;
+  margin-right: 7%;
+  width: 124px;
+}
+@media screen and (min-width:1400px) { /*当屏幕尺寸小于600px时，应用下面的CSS样式*/
+  .total li{ 
+    margin-right: 20%;
+   }          
+}
+.total li:last-child{
+  margin-right: 0 !important
+}
+.total li:first-child::before{
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 49px;
+  background: #e2e2e2;
+  left: 40%;
+}
+.box1{
+  position: absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  width:84px;
+  text-align: center;
+  line-height: 142px;
+  background:-webkit-linear-gradient(#5c78ff, #37cde5)
+}
+.box2{
+  position: absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  width:84px;
+  text-align: center;
+  line-height: 142px;
+  background:-webkit-linear-gradient(#13cd5e, #27feba)
+}
+.box3{
+  position: absolute;
+  top:0;
+  bottom:0;
+  right:0;
+  width:84px;
+  text-align: center;
+  line-height: 142px;
+  background:-webkit-linear-gradient(#f28109, #fba33f)
+}
+.bxtips{
+  font-size:12px;
+  width:200px;
+  text-align:right;
+  display:inline-block;
+  margin-right:10px;
+  margin-bottom: 5px;
+  position: relative;
+}
+.arrup{
+  font-size: 0;
+  line-height: 0;
+  border-width: 5px;
+  border-color: red;
+  border-top-width: 0;
+  border-style: dashed;
+  border-bottom-style: solid;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  position: absolute;
+  top: 7px;
+  right: 5px;
+}
+.arrdown{
+  font-size: 0;
+line-height: 0;
+border-width: 5px;
+border-color: #49be65;
+border-bottom-width: 0;
+border-style: dashed;
+border-top-style: solid;
+border-left-color: transparent;
+border-right-color: transparent;
+position: absolute;
+top: 7px;
+right: 5px;
+}
+.loglist li{
+  font-size: 12px !important;
+  border:1px solid #f0f0f0;
+  padding-left:10px;
+  margin:0 ;
+  border-radius: 2px;
+  margin-bottom: 5px;
+  float:left;
+}
+
+.loglist li>span:first-child{
+  float:left;
+  margin-top:5px;
+  width:100px;
+  white-space: nowrap;
+  height: 16px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.logtxt{
+  width: 225px;
+  display: inline-block;
+  height: 16px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.loglist{
+  padding-left:20px;
+  padding-right:20px;
+}
+.log_critical{
+  border-left:3px solid #dd1916 !important
+}
+.log_warning{
+  border-left:3px solid #f1a81f !important
+}
+.morebtn{
+  float:right;
+  margin-right:20px;
+  color:#5c78ff;
+}

@@ -1,0 +1,41 @@
+export default {
+  // Tab页
+  log_cluster_tab: 'Cluster Log',
+  log_alarm_tab: 'Alarm Log',
+  log_oper_tab: 'Operation log',
+  log_cluster: 'Cluster',
+  log_node: 'Host',
+  log_volume: 'Volume',
+  log_time: 'Time',
+  // 集群日志页
+  log_cluster_placeholder_cluster_tooltip: 'Please select cluster', // placeholder和message.warn都在用
+  log_cluster_placeholder_node_tooltip: 'Please select host',
+  log_cluster_placeholder_volume_tooltip: 'Please select volume',
+  log_cluster_placeholder_brick_tooltip: 'Please select brick',
+  log_cluster_table_logtype: 'Log Type',
+  log_cluster_table_time: 'Generation Time',
+  log_cluster_table_volume: 'Volume',
+  log_cluster_table_logfile: 'Log Name',
+  log_cluster_log_download: 'Cluster Log Download',
+  log_cluster_brick_download: 'Brick Log Download',
+  log_cluster_log_generate: 'Generate Log',
+  // 告警日志页
+  log_alarm_critical: 'Critical',
+  log_alarm_warning: 'Warning',
+  log_alarm_item: 'Alarm Item',
+  log_alarm_level: 'Level',
+  log_alarm_content: 'Content',
+  log_alarm_volume_split_brain: 'Brain splitting',
+  log_alarm_morethan: 'Exceeded the threshold',
+  log_alarm_error: 'Abnormal',
+  log_alarm_error_status: 'Abnormal state',
+  log_alarm_node_offline: 'System status is offline',
+  // 操作日志页
+  oper_table_user: 'User',
+  oper_table_success: 'Success',
+  oper_table_fail: 'Fail',
+  oper_table_logcontent: 'Log Content',
+  oper_table_read_true: 'Unread',
+  oper_table_read_false: 'Have read',
+  oper_table_read_all: 'All Read',
+};

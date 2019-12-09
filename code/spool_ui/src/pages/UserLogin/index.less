@@ -1,0 +1,75 @@
+@import '~antd/lib/style/themes/default.less';
+
+.main {
+  width: 274px;
+  position: absolute;
+  left: 141px;
+  top: 175px;
+  @media screen and (max-width: @screen-sm) {
+    width: 95%;
+  }
+
+  .icon {
+    margin-left: 16px;
+    color: rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    vertical-align: middle;
+    cursor: pointer;
+    transition: color 0.3s;
+
+    &:hover {
+      color: @primary-color;
+    }
+  }
+
+  .other {
+    margin-top: 24px;
+    line-height: 22px;
+    text-align: left;
+
+    .register {
+      float: right;
+    }
+  }
+}
+.mainbox{
+  padding: 20px;
+}
+.mainbox .ant-form-item-control{
+  width:252px
+}
+.mainbox input{
+  border: 0;
+  outline: "none";
+  border-bottom: 1px solid #aeaeae;
+ border-radius: 0 !important;
+
+}
+.mainbox{
+  :global
+  .ant-btn-primary{
+    background-color: #1b1eff;
+    border-radius:20px;
+  }
+  :global
+  .ant-input:focus{
+    box-shadow:none !important
+  }
+  :global
+  .ant-input{
+
+    background-color:#fff;
+    transition: background-color 50000s ease-in-out 0s, color 50000s ease-in-out 0s !important;
+  }
+ 
+  p{
+    margin:0
+  }
+}
+
+.mainbox h1{
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 21px;
+
+}

@@ -1,0 +1,202 @@
+{
+  "g14": {
+    "id": "component.noticeIcon.empty",
+    "defaultMessage": "No notifications",
+    "zhCN": "暂无数据"
+  },
+  "g15": {
+    "id": "menu.welcome",
+    "defaultMessage": "Welcome",
+    "zhCN": "欢迎"
+  },
+  "g16": {
+    "id": "menu.more-blocks",
+    "defaultMessage": "More Blocks",
+    "zhCN": "更多区块"
+  },
+  "g17": {
+    "id": "menu.account.center",
+    "defaultMessage": "Account Center",
+    "zhCN": "个人中心"
+  },
+  "g18": {
+    "id": "menu.account.settings",
+    "defaultMessage": "Account Settings",
+    "zhCN": "个人设置"
+  },
+  "g19": {
+    "id": "menu.account.trigger",
+    "defaultMessage": "Trigger Error",
+    "zhCN": "触发报错"
+  },
+  "g20": {
+    "id": "menu.account.logout",
+    "defaultMessage": "Logout",
+    "zhCN": "退出登录"
+  },
+  "g21": {
+    "id": "navBar.lang",
+    "defaultMessage": "Languages",
+    "zhCN": "语言"
+  },
+  "g22": {
+    "id": "app.exception.description.404",
+    "defaultMessage": "Sorry, the page you visited does not exist",
+    "zhCN": "抱歉，你访问的页面不存在"
+  },
+  "g23": {
+    "id": "app.exception.back",
+    "defaultMessage": "Back to home",
+    "zhCN": "返回首页"
+  },
+  "g23_1": {
+    "id": "REQUEST_200",
+    "defaultMessage": "The server returned the requested data successfully",
+    "zhCN": "服务器成功返回请求的数据"
+  },
+  "g24": {
+    "id": "REQUEST_201",
+    "defaultMessage": "New or modified data successfully",
+    "zhCN": "新建或修改数据成功"
+  },
+  "g25": {
+    "id": "REQUEST_202",
+    "defaultMessage": "A request has entered the background queue",
+    "zhCN": "一个请求已经进入后台排队（异步任务）"
+  },
+  "g26": {
+    "id": "REQUEST_204",
+    "defaultMessage": "Delete Successfully",
+    "zhCN": "删除数据成功"
+  },
+  "g27": {
+    "id": "REQUEST_400",
+    "defaultMessage": "An error was made in the request and the server did not create or modify the data",
+    "zhCN": "发出的请求有错误，服务器没有进行新建或修改数据的操作"
+  },
+  "g28": {
+    "id": "REQUEST_401",
+    "defaultMessage": "No Permission",
+    "zhCN": "用户没有权限（令牌、用户名、密码错误）"
+  },
+  "g29": {
+    "id": "REQUEST_403",
+    "defaultMessage": "Users are authorized, but access is prohibited",
+    "zhCN": "用户得到授权，但是访问是被禁止的"
+  },
+  "g30": {
+    "id": "REQUEST_404",
+    "defaultMessage": "The request was made for a record that did not exist and the server did not operate",
+    "zhCN": "发出的请求针对的是不存在的记录，服务器没有进行操作"
+  },
+  "g31": {
+    "id": "REQUEST_406",
+    "defaultMessage": "The requested format is not available",
+    "zhCN": "请求的格式不可得"
+  },
+  "g32": {
+    "id": "REQUEST_410",
+    "defaultMessage": "The requested resource is permanently deleted and will not be retrieved",
+    "zhCN": "请求的资源被永久删除，且不会再得到的"
+  },
+  "g33": {
+    "id": "REQUEST_422",
+    "defaultMessage": "validation Error",
+    "zhCN": "当创建一个对象时，发生一个验证错误"
+  },
+  "g34": {
+    "id": "REQUEST_500",
+    "defaultMessage": "An error occurred on the server. Please check the server",
+    "zhCN": "服务器发生错误，请检查服务器"
+  },
+  "g35": {
+    "id": "REQUEST_502",
+    "defaultMessage": "Gateway Error",
+    "zhCN": "网关错误"
+  },
+  "g36": {
+    "id": "REQUEST_503",
+    "defaultMessage": "Services Rre Unavailable",
+    "zhCN": "服务不可用，服务器暂时过载或维护"
+  },
+  "g37": {
+    "id": "REQUEST_504",
+    "defaultMessage": "Gateway Timeout",
+    "zhCN": "网关超时"
+  },
+  "g38": {
+    "id": "menu.account.customize",
+    "defaultMessage": "Customize",
+    "zhCN": "工作台定制"
+  },
+  "g39": {
+    "id": "REQUEST_ERROR",
+    "defaultMessage": "Request Error!",
+    "zhCN": "请求出错!"
+  },
+  "g40": {
+    "id": "ERROR",
+    "defaultMessage": "Error!",
+    "zhCN": "异常!"
+  },
+  "menu1": {
+    "id": "menu.menu1",
+    "defaultMessage": "clustermgmt",
+    "zhCN": "集群管理"
+  },
+  "menu2": {
+    "id": "menu.menu2",
+    "defaultMessage": "hostmgmt",
+    "zhCN": "节点管理"
+  },
+  "menu3": {
+    "id": "menu.menu3",
+    "defaultMessage": "volumemgmt",
+    "zhCN": "卷管理"
+  },
+  "menu4": {
+    "id": "menu.menu4",
+    "defaultMessage": "hostmgmt",
+    "zhCN": "节点管理"
+  },
+  "menu5": {
+    "id": "menu.menu5",
+    "defaultMessage": "hostmgmt",
+    "zhCN": "节点管理"
+  },
+  "menu6": {
+    "id": "menu.menu6",
+    "defaultMessage": "clustermgmt",
+    "zhCN": "集群管理"
+  },
+  "menu7": {
+    "id": "menu.menu7",
+    "defaultMessage": "hostmgmt",
+    "zhCN": "节点管理"
+  },
+  "menu8": {
+    "id": "menu.menu8",
+    "defaultMessage": "home",
+    "zhCN": "首页"
+  },
+  "menu9": {
+    "id": "menu.menu9",
+    "defaultMessage": "volume",
+    "zhCN": "卷管理"
+  },
+  "menu10": {
+    "id": "menu.menu10",
+    "defaultMessage": "log",
+    "zhCN": "日志"
+  },
+  "menu11": {
+    "id": "menu.menu11",
+    "defaultMessage": "system",
+    "zhCN": "系统设置"
+  },
+  "menu12": {
+    "id": "menu.menu12",
+    "defaultMessage": "system",
+    "zhCN": "系统设置"
+  }
+}

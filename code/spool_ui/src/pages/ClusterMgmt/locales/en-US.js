@@ -1,0 +1,20 @@
+export default {
+    "cluster.form.name": "name",
+    "cluster.form.name.required": "Please enter name",
+    "cluster.form.desc": "describe",
+    "cluster.form.desc.required": "Please enter describe",
+    "cluster.form.node": "Host",
+    "cluster.form.noname": "Unnamed",
+    "cluster.form.state": "State",
+    "cluster.form.host.selected": "Selected host",
+    "cluster.form.host.select": "Optional host",
+    "cluster.detail.title": "Cluster Detail",
+    "cluster.detail.title.desc": "Show cluster details",
+    "cluster.detail.host.title": "Host",
+    "cluster.detail.host.clusterstate": "cluster state",
+    "cluster.detail.host.servicestate": "service state",
+    "cluster.detail.volume.title": "Volume",
+    "cluster.detail.client.title": "Client",
+    "cluster.detail.client.port": " port",
+    "cluster.detail.vloume.state.unknow": "Unknow"
+};

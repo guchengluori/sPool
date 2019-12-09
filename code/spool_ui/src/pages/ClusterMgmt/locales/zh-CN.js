@@ -1,0 +1,20 @@
+export default {
+    "cluster.form.name": "别名",
+    "cluster.form.name.required": "请输入别名",
+    "cluster.form.desc": "描述",
+    "cluster.form.desc.required": "请输入描述",
+    "cluster.form.node": "节点",
+    "cluster.form.noname": "未命名",
+    "cluster.form.state": "状态",
+    "cluster.form.host.selected": "已选节点",
+    "cluster.form.host.select": "可选节点",
+    "cluster.detail.title": "集群详细",
+    "cluster.detail.title.desc": "展示集群的详细信息",
+    "cluster.detail.host.title": "节点信息",
+    "cluster.detail.host.clusterstate": "集群状态",
+    "cluster.detail.host.servicestate": "服务状态",
+    "cluster.detail.volume.title": "卷信息",
+    "cluster.detail.client.title": "客户端信息",
+    "cluster.detail.client.port": " 个端口",
+    "cluster.detail.vloume.state.unknow": "未知"
+};

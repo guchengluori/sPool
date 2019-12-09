@@ -1,0 +1,42 @@
+{
+  "login1": {
+    "id": "param.volume.sn",
+    "defaultMessage": "序号",
+    "zhCN": "序号"
+  },
+  "login2": {
+    "id": "param.volume.name",
+    "defaultMessage": "卷名称",
+    "zhCN": "卷名称"
+  },
+  "login3": {
+    "id": "param.volume.type",
+    "defaultMessage": "卷类型",
+    "zhCN": "卷类型"
+  },
+  "login4": {
+    "id": "param.volume.status",
+    "defaultMessage": "卷状态",
+    "zhCN": "卷状态"
+  },
+  "login5": {
+    "id": "param.volume.cluster",
+    "defaultMessage": "归属集群",
+    "zhCN": "归属集群"
+  },
+  "login6": {
+    "id": "param.volume.transport",
+    "defaultMessage": "传输协议",
+    "zhCN": "传输协议"
+  },
+  "login7": {
+    "id": "param.volume.id",
+    "defaultMessage": "卷ID",
+    "zhCN": "卷ID"
+  },
+  "login8": {
+    "id": "param.volume.nfs_disabled",
+    "defaultMessage": "NFS禁用",
+    "zhCN": "NFS禁用"
+  }
+}

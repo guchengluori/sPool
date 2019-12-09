@@ -1,0 +1,320 @@
+[
+  {
+    "modelName": "cloud",
+    "modelDesc": "云计算服务",
+    "modelChildren": [
+      {
+        "modelName": "host",
+        "modelDesc": "云主机",
+        "menuList": []
+      },
+      {
+        "modelName": "storage",
+        "modelDesc": "云存储",
+        "menuList": []
+      },
+      {
+        "modelName": "db",
+        "modelDesc": "云数据库",
+        "menuList": []
+      },
+      {
+        "modelName": "k8s",
+        "modelDesc": "容器服务",
+        "menuList": []
+      }
+    ]
+  },
+  {
+    "modelName": "charge",
+    "modelDesc": "计费管理",
+    "modelChildren": [
+      {
+        "modelName": "manage",
+        "modelDesc": "账单管理",
+        "menuList": []
+      },
+      {
+        "modelName": "rules",
+        "modelDesc": "计费规则",
+        "menuList": []
+      }
+    ]
+  },
+  {
+    "modelName": "automation",
+    "modelDesc": "自动化服务",
+    "modelChildren": [
+      {
+        "modelName": "deploy",
+        "modelDesc": "自动化部署",
+        "menuList": []
+      },
+      {
+        "modelName": "operation",
+        "modelDesc": "自动化运维",
+        "menuList": []
+      }
+    ]
+  },
+  {
+    "modelName": "lifeCycle",
+    "modelDesc": "生命周期",
+    "modelChildren": [
+      {
+        "modelName": "host",
+        "modelDesc": "云主机",
+        "menuList": []
+      },
+      {
+        "modelName": "storage",
+        "modelDesc": "云存储",
+        "menuList": []
+      },
+      {
+        "modelName": "db",
+        "modelDesc": "云数据库",
+        "menuList": []
+      },
+      {
+        "modelName": "flow",
+        "modelDesc": "流程单列表",
+        "menuList": []
+      }
+    ]
+  },
+  {
+    "modelName": "security",
+    "modelDesc": "安全服务",
+    "modelChildren": [
+      {
+        "modelName": "fortress",
+        "modelDesc": "堡垒机",
+        "menuList": []
+      },
+      {
+        "modelName": "scan",
+        "modelDesc": "漏洞扫描",
+        "menuList": []
+      },
+      {
+        "modelName": "firm",
+        "modelDesc": "安全加固",
+        "menuList": []
+      },
+      {
+        "modelName": "control",
+        "modelDesc": "访问控制",
+        "menuList": []
+      },
+      {
+        "modelName": "operAudit",
+        "modelDesc": "操作审计",
+        "menuList": []
+      },
+      {
+        "modelName": "dbAudit",
+        "modelDesc": "数据库审计",
+        "menuList": []
+      }
+    ]
+  },
+  {
+    "modelName": "bigData",
+    "modelDesc": "大数据服务",
+    "modelChildren": [
+      {
+        "modelName": "dme",
+        "modelDesc": "DME",
+        "menuList": []
+      }
+    ]
+  },
+  {
+    "modelName": "operation",
+    "modelDesc": "运维管理",
+    "modelChildren": [
+      {
+        "modelName": "monitor",
+        "modelDesc": "监控管理",
+        "menuList": []
+      },
+      {
+        "modelName": "alarm",
+        "modelDesc": "告警管理",
+        "menuList": []
+      }
+    ]
+  },
+  {
+    "modelName": "asset",
+    "modelDesc": "资产管理",
+    "modelChildren": [
+      {
+        "modelName": "assetList",
+        "modelDesc": "资产列表",
+        "menuList": []
+      },
+      {
+        "modelName": "basicData",
+        "modelDesc": "基础数据",
+        "menuList": []
+      }
+    ]
+  },
+  
+  {
+    "modelName": "recovery",
+    "modelDesc": "灾备与迁移",
+    "modelChildren": [
+      {
+        "modelName": "disaster",
+        "modelDesc": "容灾服务",
+        "menuList": []
+      },
+      {
+        "modelName": "backup",
+        "modelDesc": "备份服务",
+        "menuList": []
+      },
+      {
+        "modelName": "migration",
+        "modelDesc": "迁移服务",
+        "menuList": [
+          {
+            "type": "menu",
+            "name": "home",
+            "desc": "首页概览",
+            "hasPrivs": true,
+            "action": []
+          },
+          {
+            "type": "menu",
+            "name": "task",
+            "desc": "迁移任务",
+            "hasPrivs": true,
+            "subMenus": [
+              {
+                "type": "menu",
+                "name": "os",
+                "desc": "操作系统",
+                "hasPrivs": true,
+                "action": []
+              },
+              {
+                "type": "menu",
+                "name": "storage",
+                "desc": "存储",
+                "hasPrivs": true,
+                "action": []
+              }
+            ]
+          },
+          {
+            "type": "menu",
+            "name": "template",
+            "desc": "迁移模板",
+            "hasPrivs": true,
+            "action": []
+          },
+          {
+            "type": "menu",
+            "name": "sync",
+            "desc": "同步任务",
+            "hasPrivs": true,
+            "action": []
+          },
+          {
+            "type": "menu",
+            "name": "resource",
+            "desc": "上云资源",
+            "hasPrivs": true,
+            "action": []
+          },
+          {
+            "type": "menu",
+            "name": "user",
+            "desc": "平台管理",
+            "hasPrivs": true,
+            "action": []
+          },
+          {
+            "type": "menu",
+            "name": "param",
+            "desc": "系统设置",
+            "hasPrivs": true,
+            "action": []
+          }
+        ]
+      }
+    ]
+  },
+  
+  {
+    "modelName": "manage",
+    "modelDesc": "系统管理",
+    "modelChildren": [
+      {
+        "modelName": "system",
+        "modelDesc": "系统设置",
+        "menuList": []
+      },
+      {
+        "modelName": "task",
+        "modelDesc": "任务管理",
+        "menuList": []
+      },
+      {
+        "modelName": "organization",
+        "modelDesc": "组织架构管理",
+        "menuList": []
+      },
+      {
+        "modelName": "project",
+        "modelDesc": "项目管理",
+        "menuList": []
+      },
+      {
+        "modelName": "user",
+        "modelDesc": "用户管理",
+        "menuList": []
+      },
+      {
+        "modelName": "role",
+        "modelDesc": "角色管理",
+        "menuList": []
+      },
+      {
+        "modelName": "account",
+        "modelDesc": "账户管理",
+        "menuList": []
+      },
+      {
+        "modelName": "soft",
+        "modelDesc": "软件授权",
+        "menuList": []
+      },
+      {
+        "modelName": "platform",
+        "modelDesc": "平台对接配置",
+        "menuList": []
+      }
+    ]
+  },
+  {
+    "modelName": "support",
+    "modelDesc": "技术支持",
+    "modelChildren": [
+      {
+        "modelName": "order",
+        "modelDesc": "工单",
+        "menuList": []
+      },
+      {
+        "modelName": "help",
+        "modelDesc": "帮助文档库",
+        "menuList": []
+      }
+    ]
+  }
+]

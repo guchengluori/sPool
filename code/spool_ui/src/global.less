@@ -1,0 +1,148 @@
+@import '~antd/lib/style/themes/default.less';
+
+@nav-header-height: @layout-header-height;
+main p,main span{
+  font-size:13px;
+}
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+canvas {
+  display: block;
+}
+
+body {
+  font-size:12px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.globalSpin {
+  width: 100%;
+  margin: 40px 0 !important;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+// 菜单组件样式覆盖
+.ant-menu.ant-menu-light {
+  background: #eeeff3;
+  .ant-menu.ant-menu-sub {
+    background: #eeeff3;
+  }
+}
+.ant-menu-submenu > .ant-menu {
+  background: #eeeff3 !important;
+}
+.ant-layout-sider {
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1) !important;
+  transition: all 0.3s cubic-bezier(0, 0, 0.2, 1) !important;
+}
+// 内容区整体遮罩
+.custom-mask {
+  position: fixed;
+  visibility: visible;
+  opacity: 0.3;
+  background-color: rgba(0, 0, 0, 0.65) !important;
+  z-index: 9;
+  width: 100vw;
+  height: 100vh;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+}
+// 全局内容区父层样式
+.home_background {
+  padding: 24px 32px;
+  overflow: hidden;
+  background:#FFFfff;
+}
+// 简单样式缩写
+.w200 {
+  width: 200px;
+}
+.fs12 {
+  font-size: 12px;
+}
+.float_r {
+  float: right;
+}
+.mr8 {
+  margin-right: 8px;
+}
+.mr16 {
+  margin-right: 16px;
+}
+.mt8 {
+  margin-top: 8px;
+}
+.mt16 {
+  margin-top: 16px;
+}
+.mt24 {
+  margin-top: 24px;
+}
+.ml32 {
+  margin-left: 32px;
+}
+.mb0 {
+  margin-bottom: 0px;
+}
+.m0_8 {
+  margin: 0px 8px;
+}
+.m16_0 {
+  margin: 16px 0px;
+}
+.ant-table-thead{
+  background:#edf3ff !important
+}
+.ant-table-tbody{
+  background:#ffffff !important
+}
+.ant-table-small > .ant-table-content > .ant-table-body{
+   margin: 0 0px !important;
+}
+.ant-menu:not(.ant-menu-horizontal) .ant-menu-item-selected{
+  background: none !important
+}
+.ant-menu.ant-menu-light{
+  background:#ffffff;
+}
+
+@media screen and (min-width:1680px){
+  .footerinfo{
+    margin-bottom: 70px;
+  }
+}

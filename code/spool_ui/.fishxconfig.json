@@ -1,0 +1,10 @@
+{
+  "prjectType": "umi",
+  "menuApi": {
+    "addMenu": "http://10.45.69.15/api/auth/menu/create",
+    "deleteMenu": "http://10.45.69.15/api/auth/menu/delete",
+    "menuList": "http://10.45.69.15/api/auth/menu/list"
+  },
+  "staffCode": "0027008484",
+  "projectName": "spool_ui"
+}

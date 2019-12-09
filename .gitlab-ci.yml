@@ -1,0 +1,36 @@
+
+# 执行job的阶段 按顺序串行执行
+stages:
+  - compile
+
+compile:
+  stage: compile
+  before_script:
+    # 一些特殊情况需要SSH key的场景，该部分见下文
+    # - ...
+    # 定义变量 如NODE环境变量
+    - NODE_ENV=`if [[ ${CI_COMMIT_REF_NAME:0:3} = "dev" || ${CI_COMMIT_REF_NAME:0:4} = "test" ]]; then echo "development"; else echo "production"; fi`;
+  script:
+    # 为node modules做缓存， 有缓存用缓存，没有则你npm install并添加缓存
+    - cd ./code/spool_ui/
+    - PACKAGE_HASH=$(md5sum package.json | awk '{print $1}');
+    - mkdir -p ~/builds/spool_cache/node_modules
+    - NPM_CACHE=~/builds/spool_cache/node_modules/${PACKAGE_HASH}.tar
+    - if [ -f $NPM_CACHE ];
+      then
+        echo "Use Cache";
+        tar xf $NPM_CACHE;
+      else
+        npm i --registry https://registry.npmjs.org/;
+        tar cf - ./node_modules > $NPM_CACHE;
+      fi
+
+    # npm build
+    - echo "start build"
+    - npm run build
+    - echo "build success"
+  tags:
+    - runner-tag
+  only:
+    - master
+    - develop
